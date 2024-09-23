@@ -1,0 +1,34 @@
+#navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 60%;
+}
+
+#navbar h1 {
+  font-size: 4em;
+  margin: 1em auto;
+  text-align: center;
+}
+
+#navbar input {
+  padding: 1em 2em 1em 0.5em;
+  background-color: transparent;
+  border-style: none;
+  color: #aaa;
+  border: 1px solid #aaa;
+  border-radius: 15px 0 0 15px;
+}
+
+#navbar button {
+  font-size: 1.5em;
+  padding: 0.3em;
+  background-color: transparent;
+  color: #f7d354;
+  border-style: none;
+  border: 1px solid #f7d354;
+  height: 100%;
+  border-radius: 0 15px 15px 0;
+}
