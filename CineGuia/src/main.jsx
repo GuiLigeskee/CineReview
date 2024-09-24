@@ -11,11 +11,11 @@ import Search from "./pages/Search/Search.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/CineReview">
       <Routes>
         <Route element={<App />}>
           <Route path="/CineReview" element={<Home />} />
-          <Route path="/CineReview/movie/:id" element={<Movie />} />
+          <Route path="/movie/:id" element={<Movie />} />
           <Route path="/CineReview/search" element={<Search />} />
         </Route>
       </Routes>
