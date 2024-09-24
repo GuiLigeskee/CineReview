@@ -1,10 +1,10 @@
-/* From Uiverse.io by gharsh11032000 */
 .card-container {
-  width: auto;
+  width: 100%;
+  max-width: 400px; /* Limita a largura máxima para telas maiores */
   height: auto;
   position: relative;
   border-radius: 10px;
-  margin: 1em 0em;
+  margin: 1em auto; /* Centraliza o card horizontalmente */
 }
 
 .card-container::before {
@@ -74,4 +74,16 @@
   scale: 2.5;
   rotate: 30deg;
   filter: blur(7px) brightness(0.4);
+}
+
+/* Estilização para dispositivos móveis (máximo de 480px) */
+@media (max-width: 480px) {
+  .card-container {
+    max-width: 92.5%; /* Ajuste para ocupar toda a largura da tela */
+    margin: 1em 1em; /* Margens laterais para dar espaçamento */
+  }
+
+  .card .content .heading {
+    font-size: 24px; /* Reduzindo o tamanho da fonte para dispositivos menores */
+  }
 }

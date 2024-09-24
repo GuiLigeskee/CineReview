@@ -41,29 +41,31 @@ const Movie = () => {
     <div className="movie-page">
       {movie && (
         <>
+          <h1 className="titleMovie">{movie.title}</h1>
           <MovieCard movie={movie} showLink={false} />
           <p className="tagline">{movie.tagline}</p>
           <div className="info">
             <h3>
-              <BsWallet2 /> Orçamento:
+              <BsWallet2 />
+              Budget:
             </h3>
             <p>{formatCurrency(movie.budget)}</p>
           </div>
           <div className="info">
             <h3>
-              <BsGraphUp /> Faturamento:
+              <BsGraphUp /> total revenue:
             </h3>
             <p>{formatCurrency(movie.revenue)}</p>
           </div>
           <div className="info">
             <h3>
-              <BsHourglassSplit /> Duração:
+              <BsHourglassSplit /> duration:
             </h3>
             <p>{movie.runtime} min</p>
           </div>
           <div className="info description">
             <h3>
-              <BsFillFileEarmarkTextFill /> Descrição:
+              <BsFillFileEarmarkTextFill /> Overview:
             </h3>
             <p>{movie.overview}</p>
           </div>

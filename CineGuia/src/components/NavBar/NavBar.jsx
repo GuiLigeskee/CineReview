@@ -13,15 +13,15 @@ const NavBar = () => {
 
     if (!search) return;
 
-    navigate(`/search?q=${search}`);
+    navigate(`/CineReview/search?q=${search}`);
     setSearch("");
   };
 
   return (
     <nav id="navbar">
       <h1>
-        <Link to="/">
-          <BiCameraMovie /> CineGuia
+        <Link to="/CineReview">
+          <BiCameraMovie /> Cine Review
         </Link>
       </h1>
       <form onSubmit={handleSubmit}>

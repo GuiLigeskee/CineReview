@@ -1,8 +1,8 @@
 .container .title {
   color: #fff;
-  font-size: 2.5em;
+  font-size: 2em; /* Reduzindo um pouco o tamanho da fonte */
   text-align: center;
-  margin: 2em 0 0.5em;
+  margin: 1.5em 0 0.5em;
 }
 
 .title .query-text {
@@ -12,8 +12,35 @@
 .movies-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 0 auto;
+  justify-content: center; /* Centralizar os itens em telas menores */
   gap: 0.5em;
   padding: 5%;
+}
+
+/* Estilização para telas menores (máximo de 768px) */
+@media (max-width: 768px) {
+  .container .title {
+    font-size: 1.8em; /* Ajuste o tamanho da fonte para telas médias */
+    margin: 1em 0 0.3em;
+  }
+
+  .movies-container {
+    justify-content: center;
+    gap: 0.7em;
+    padding: 3%; /* Reduzindo padding para aproveitar melhor o espaço */
+  }
+}
+
+/* Estilização para telas ainda menores (máximo de 480px) */
+@media (max-width: 480px) {
+  .container .title {
+    font-size: 1.5em; /* Ajuste menor ainda para telas bem pequenas */
+    margin: 0.8em 0 0.3em;
+  }
+
+  .movies-container {
+    flex-direction: column; /* Colocar os itens em coluna para telas pequenas */
+    gap: 0.5em;
+    padding: 2%; /* Menor padding ainda para telas pequenas */
+  }
 }

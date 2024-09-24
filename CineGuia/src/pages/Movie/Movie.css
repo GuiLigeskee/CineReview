@@ -2,8 +2,15 @@
   color: #fff;
   display: flex;
   flex-direction: column;
-  max-width: 600px;
+  max-width: 100%; /* Para ocupar a largura total da tela */
+  padding: 1em; /* Adiciona um pouco de espaçamento interno */
   margin: 2em auto;
+}
+
+.titleMovie {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1em;
 }
 
 .movie-page svg {
@@ -13,25 +20,50 @@
 
 .tagline {
   text-align: center;
-  font-size: 1.2em;
-  margin-bottom: 2em;
+  font-size: 1.1em; /* Ajustando o tamanho da fonte */
+  margin-bottom: 1.5em; /* Reduzindo a margem */
 }
 
 .info {
-  margin-bottom: 1.5em;
+  margin-bottom: 1em; /* Menos margem inferior */
 }
 
 .info h3 {
-  margin-bottom: 1em;
+  margin-bottom: 0.8em; /* Ajuste no espaçamento para telas menores */
   display: flex;
   align-items: center;
-  gap: 0.5em;
+  gap: 0.3em; /* Menor espaçamento entre os ícones e o texto */
 }
 
 .description {
-  padding-bottom: 5em;
+  padding-bottom: 3em; /* Reduzindo o espaçamento inferior */
 }
 
 .description p {
   line-height: 1.5em;
+}
+
+/* Estilização específica para telas menores que 480px */
+@media (max-width: 480px) {
+  .movie-page {
+    padding: 1em 0.5em; /* Reduzindo o padding lateral em dispositivos móveis */
+    max-width: 100%;
+  }
+
+  .tagline {
+    font-size: 1em; /* Tamanho menor da fonte para caber melhor em telas pequenas */
+  }
+
+  .info h3 {
+    font-size: 1em; /* Reduzindo o tamanho do título */
+    gap: 0.2em; /* Menor espaço entre o ícone e o texto */
+  }
+
+  .description {
+    padding-bottom: 2em; /* Menor padding inferior para otimizar espaço */
+  }
+
+  .description p {
+    font-size: 0.95em; /* Diminuindo o tamanho do texto da descrição */
+  }
 }

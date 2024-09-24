@@ -14,9 +14,9 @@ createRoot(document.getElementById("root")).render(
     <BrowserRouter>
       <Routes>
         <Route element={<App />}>
-          <Route path="/" element={<Home />} />
-          <Route path="/movie/:id" element={<Movie />} />
-          <Route path="search" element={<Search />} />
+          <Route path="/CineReview" element={<Home />} />
+          <Route path="/CineReview/movie/:id" element={<Movie />} />
+          <Route path="/CineReview/search" element={<Search />} />
         </Route>
       </Routes>
     </BrowserRouter>
