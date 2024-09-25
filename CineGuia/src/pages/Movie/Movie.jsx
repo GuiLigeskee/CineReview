@@ -53,13 +53,13 @@ const Movie = () => {
           </div>
           <div className="info">
             <h3>
-              <BsGraphUp /> total revenue:
+              <BsGraphUp /> Total revenue:
             </h3>
             <p>{formatCurrency(movie.revenue)}</p>
           </div>
           <div className="info">
             <h3>
-              <BsHourglassSplit /> duration:
+              <BsHourglassSplit /> Duration:
             </h3>
             <p>{movie.runtime} min</p>
           </div>
